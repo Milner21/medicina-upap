@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.seccion1{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.seccion2{
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #65dfff;
+}

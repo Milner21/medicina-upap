@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+.container.section1 {
+  margin-top: 0.8rem;
+}
+
+.initial-content {
+  padding-top: 3rem;
+  color: #000380;
+}
+.initial-content h4 {
+  margin: 0;
+  padding: 0.2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  min-width: none;
+}
+.title1{
+  font-family: 'Inspiration', cursive !important;
+  font-size: 6rem !important;
+}
+.title3 {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+}
+.title3 h4 {
+  background-color: #c71242;
+  border: 0.2rem solid white;
+  border-radius: 1.1rem;
+  padding: 0.5rem 0.6rem;
+  color: white;
+  font-size: 2.2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-bottom: 1.3rem;
+  text-align: center;
+}
+@media only screen and (max-width: 550px) {
+  .initial-content .title1, .initial-content .title2{
+    padding-left: 2.5rem;
+  }
+ 
+  .title3 {
+    display: flex;
+    justify-content: center;
+  }
+  .title3 h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .btn-content button {
+    background-color: #000380;
+    color: #fff;
+    border: 3px solid #000380;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    padding-inline: 5rem;
+    font-size: larger;
+    -webkit-transition: box-shadow 500ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 500ms ease-in-out, color 300ms ease-in-out;
+  }
+}
+.btn {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btna {
+  outline:none;
+  position: relative;
+  display: inline-flex;
+  padding: 10px 30px;
+  background-color: #000380;
+  border: 0.1rem solid #000380;
+  transition: border 0.6s;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.btna span {
+  position: relative;
+  z-index: 1;
+}
+.btna:hover {
+  color: #fff;
+  border: 0.1rem solid #c71242;
+  background: none;
+  transition: background 0.8s;
+}
+
+.btna::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 100%;
+  background-color: #c71242;
+  transition: width 0.5s, height 0.5s;
+  
+}
+.btna:hover::before {
+  width: 99.5%;
+  height: 96%;
+  border-radius: 6px;
+}
+
+.img{
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
