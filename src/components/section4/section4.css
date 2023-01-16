@@ -1,0 +1,40 @@
+.panel-background {
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000280;
+  height: 490px;
+  display: flex;
+  justify-content: center;
+}
+.panel-section-04 {
+  backdrop-filter: blur(.5rem);
+  background-color: rgba(13, 182, 255, 0.2);
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #fff;
+  max-width: 720px;
+}
+.panel-section-04 h3 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.panel-section-04 h5{
+    text-align: center;
+}
+.panel-section-04 ul li{
+    background: none;
+    color: #fff;
+    border-color: #fff
+}
+.panel-section-04 ul li span{
+    color: greenyellow;
+    font-size: 115%;
+    margin-right: .2rem;
+}
+.panel-section-04-button{
+    text-align: center;
+}

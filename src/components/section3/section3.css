@@ -1,42 +1,52 @@
-.panel {
-    background-color: #000380;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding-top: 1.5rem;
-  }
-  
-  .panel-title {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .panel-title h4 {
-    text-align: center;
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-  }
-  .panel-cards {
-    display: flex;
-    justify-content: center;
-  }
-  .panel-card {
-    color: #fff;
-    height: 15rem;
-    width: 14rem;
-    margin: 1rem 0.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    backdrop-filter: blur(1rem);
-    background-color: rgba(117, 217, 241, 0.2);
-    border: 2px solid #c71242;
-    -webkit-box-shadow: 0px 0px 18px 0px rgba(199, 18, 66, 1);
-    -moz-box-shadow: 0px 0px 18px 0px rgba(199, 18, 66, 1);
-    box-shadow: 0px 0px 18px 0px rgba(199, 18, 66, 1);
-  }
-  
+
+
+
+
+
+/*
+.panel-section3 h3 {
+  padding: 1rem 1rem;
+  margin: 0;
+  font-weight: bold;
+  color: #000280;
+}
+.panel-section3-card {
+  border: 3px solid #000280;
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+}
+.panel-section3-card h5{
+  color: #c71242;
+  font-weight: bold;
+  padding-top: .5rem;
+}
+.panel-section3-card ul li{
+  background: none !important;
+}
+.panel-section3-card ul li{
+  font-weight: bold;
+  color: #000280;
+}
+.panel-section3-card ul li span{
+  color: #198754;
+  padding-right: .5rem;
+  font-size: 20px;
+}
+.panel-section3-button{
+  display: flex;
+  justify-content: center;
+}
+.panel-section3-button .btn{
+  margin: 0;
+  text-transform: uppercase;
+}
+.col1{
+  margin-top: 6px !important;
+  max-height: 430px;
+}
+.col2{
+  padding: 0 1rem;
+}
+
+*/

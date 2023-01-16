@@ -9,14 +9,14 @@ import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 
 function Section2() {
   return (
-    <div className="panel">
+    <div className="panel" data-aos="fade-up">
       <div className="panel-title">
         <h4>Os benefícios de estudar MEDICINA na UPAP</h4>
       </div>
-      <div className="panel-cards">
+      <div className="panel-cards" >
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-sm col-md-3 d-flex justify-content-center p-3">
+            <div className="col-sm col-md-4 col-lg-3 d-flex justify-content-center p-3">
               <div className="panel-card">
                 <span>
                   <BsFileEarmarkDiff />
@@ -28,7 +28,7 @@ function Section2() {
                 </p>
               </div>
             </div>
-            <div className="col-sm col-md-3 d-flex justify-content-center p-3">
+            <div className="col-sm col-md-4 col-lg-3 d-flex justify-content-center p-3">
               <div className="panel-card">
                 <span>
                   <FiCheckSquare />
@@ -37,11 +37,11 @@ function Section2() {
                 <p className="text-center">
                   A UPAP possui todas as certificações, habilitações e
                   acreditações exigidas pelo MEC, CONES, ANEAES, portanto os
-                  títulos emitidos são 100% legais.
+                  diplomas emitidos são 100% legais.
                 </p>
               </div>
             </div>
-            <div className="col-sm col-md-3 d-flex justify-content-center p-3">
+            <div className="col-sm col-md-4 col-lg-3 d-flex justify-content-center p-3">
               <div className="panel-card">
                 <span>
                   <AiOutlineFileProtect />
@@ -60,7 +60,7 @@ function Section2() {
       <div className="panel-cards">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-sm col-md-3 d-flex justify-content-center p-3">
+            <div className="col-sm col-md-4 col-lg-3 d-flex justify-content-center p-3">
               <div className="panel-card">
                 <span>
                   <GiTakeMyMoney />
@@ -73,7 +73,7 @@ function Section2() {
                 </p>
               </div>
             </div>
-            <div className="col-sm col-md-3 d-flex justify-content-center p-3">
+            <div className="col-sm col-md-4 col-lg-3 d-flex justify-content-center p-3">
               <div className="panel-card">
                 <span>
                   <IoIosPeople />
@@ -86,7 +86,7 @@ function Section2() {
                 </p>
               </div>
             </div>
-            <div className="col-sm col-md-3 d-flex justify-content-center p-3">
+            <div className="col-sm col-md-4 col-lg-3 d-flex justify-content-center p-3">
               <div className="panel-card">
                 <span>
                   <HiOutlineBuildingOffice2 />
@@ -101,11 +101,6 @@ function Section2() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="panel-button">
-        <a className="button-section2">
-          <span>Obtenha mais informações aqui</span>
-        </a>
       </div>
     </div>
   );

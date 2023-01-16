@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import "./section3.css";
+import Carrosel from "./carousel/Carousel";
 
 function Section3() {
   return (
-    <div style={{height: '50rem'}}>Section3</div>
-  )
+    <div>
+      <div className="container">
+        <div className="panel-section3">
+          <Carrosel />
+        </div>
+      </div>
+      .
+    </div>
+  );
 }
 
-export default Section3
+export default Section3;
