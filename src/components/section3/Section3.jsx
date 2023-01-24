@@ -1,6 +1,6 @@
 import React from "react";
 import "./section3.css";
-import Carrosel from "./carousel/Carousel";
+import Carrosel from "../Carousel";
 
 function Section3() {
   return (

@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000280;
-  height: 490px;
   display: flex;
   justify-content: center;
 }
@@ -38,3 +37,86 @@
 .panel-section-04-button{
     text-align: center;
 }
+
+
+/*
+**
+**320PX
+**
+*/
+
+@media only screen and (min-width: 320px) {
+    .panel-section-04{
+       margin: .9rem .5rem;
+    }
+    .panel-section-04 h3 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 95%;
+      }
+      .panel-section-04 h5 {
+        font-size: 95%;
+      }
+  }
+  
+  /*
+  **
+  **375PX
+  **
+  */
+  
+  @media only screen and (min-width: 375px) {
+    
+  }
+  
+  /*
+  **
+  **520PX
+  **
+  */
+  
+  @media only screen and (min-width: 520px) {
+  }
+  
+  /*
+  **
+  **576PX
+  **
+  */
+  
+  @media only screen and (min-width: 576px) {
+    
+  }
+  
+  /*
+  **
+  **768PX
+  **
+  */
+  
+  @media only screen and (min-width: 768px) {
+    .panel-section-04{
+        width: 65%;
+    }
+  }
+  
+  /*
+  **
+  **992PX
+  **
+  */
+  
+  @media only screen and (min-width: 992px) {
+    .panel-section-04 h3{
+        font-size: 100%;
+    }
+  }
+  /*
+  **
+  **1200PX
+  **
+  */
+  
+  @media only screen and (min-width: 1200px) {
+  }
+  

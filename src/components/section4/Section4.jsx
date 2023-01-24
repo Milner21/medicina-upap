@@ -33,7 +33,7 @@ function Section4() {
             reconhecido em todo o Mercosul.
           </li>
           <li className="list-group-item">
-            <h5 data-aos="zoom-out-up" data-aos-duration="500">
+            <h5 data-aos="zoom-out" data-aos-duration="500">
               De fato, somos a única universidade privada em ciudad del este com
               credenciamento na carreira MEDICINA.
             </h5>

@@ -14,7 +14,7 @@ function Section1() {
             <h4>CONVOCATORIA 2023</h4>
           </div>
           <div className="btn">
-            <a  className="btna">
+            <a  className="btna" href="whatsapp://send?phone=595973115074&text=Hola,%20estoy%20interesado%20por%20medicina">
               <span>Entre em contato conosco agora</span>
             </a>
           </div>

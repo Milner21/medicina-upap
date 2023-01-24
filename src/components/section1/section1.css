@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 
-.container.section1 {
+.container .section1 {
   margin-top: 0.8rem;
 }
 
 .initial-content {
   padding-top: 3rem;
-  color: #000380;
+  color: var(--bgBlue);
 }
+
 .initial-content h4 {
   margin: 0;
   padding: 0.2rem;
@@ -18,6 +19,10 @@
 .title1{
   font-family: 'Inspiration', cursive !important;
   font-size: 6rem !important;
+  letter-spacing: 0.3rem;
+}
+.title2{
+  font-family: 'Inspiration', cursive !important;
 }
 .title3 {
   padding-top: 1.5rem;

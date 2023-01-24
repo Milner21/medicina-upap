@@ -34,7 +34,7 @@
   flex-direction: column;
   overflow: hidden;
   backdrop-filter: blur(2rem);
-  background-color: rgba(100, 1, 142, 0.7);
+  background-color: #000280;
   /*border: 2px solid #0db8ff;
   -webkit-box-shadow: 0px 0px 8px 1px rgba(100, 1, 142, 1);
   -moz-box-shadow: 0px 0px 8px 1px rgba(100, 1, 142, 1);

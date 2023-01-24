@@ -1,0 +1,88 @@
+.containerBg {
+  background-color: var(--bgPrimary);
+  background-image: url("../img/bgSection03.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  padding-top: 1rem;
+}
+/*
+**
+**320PX
+**
+*/
+
+@media only screen and (min-width: 320px) {
+  .containerBg{
+    height: 100%;
+    padding-bottom: 1rem;
+  }
+}
+
+/*
+**
+**375PX
+**
+*/
+
+@media only screen and (min-width: 375px) {
+  
+}
+
+/*
+**
+**520PX
+**
+*/
+
+@media only screen and (min-width: 520px) {
+}
+
+/*
+**
+**576PX
+**
+*/
+
+@media only screen and (min-width: 576px) {
+  
+}
+
+/*
+**
+**768PX
+**
+*/
+
+@media only screen and (min-width: 768px) {
+  
+}
+
+/*
+**
+**992PX
+**
+*/
+
+@media only screen and (min-width: 992px) {
+  
+}
+/*
+**
+**1200PX
+**
+*/
+
+@media only screen and (min-width: 1200px) {
+}
+
+/*
+**
+**1400PX
+**
+*/
+
+@media only screen and (min-width: 1400px) {
+}
+
