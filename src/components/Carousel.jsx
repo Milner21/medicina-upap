@@ -7,21 +7,21 @@ import {
 } from "reactstrap";
 //import "../styles/carousel.css";
 import styles from "../styles/Carousel.module.css";
-import fondo1 from "../img/fondo.jfif";
-import fondo2 from "../img/fondo02.png";
+import carouselItemBg01 from "../img/carouselBgImg01.jfif";
+import carouselItemBg02 from "../img/carouselBgImg02.png";
 import logo_upap from "../img/upap_logo.png";
 import docRevalida from "../img/docRevalida.png";
 import revalidaTitle from "../img/revalidaTitle.png";
 
 const items = [
   {
-    src: fondo1,
+    src: carouselItemBg01,
     altText: "Slide 1",
     caption: "Slide 1",
     content: <Content01 />,
   },
   {
-    src: fondo2,
+    src: carouselItemBg02,
     altText: "Slide 2",
     caption: "Slide 2",
     content: <Content02 />,
