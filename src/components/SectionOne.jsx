@@ -2,12 +2,12 @@ import React from "react";
 import styles from "../styles/SectionOne.module.css";
 import img01 from "../img/img01Section01.png";
 import img02 from "../img/img02Section01.png";
-
-const Whatsme = () => {
-  return "whatsapp://send?phone=595982789647&text=Hola,%20estoy%20muy%20interesado%20en%20estudiar%20medicina%20en%20paraguai,%20en%20la%20UPAP,%20me%20podrias%20dar%20mas%20informacion";
-};
+import { BsWhatsapp } from "react-icons/bs";
+import WhatsMe from "./WhatsMe";
 
 function SectionOne() {
+  const {message, send} = WhatsMe()
+
   return (
     <div className={styles.containerBg}>
       <div className="container">
@@ -19,8 +19,13 @@ function SectionOne() {
               <span>convocatoria 2023</span>
             </h4>
             <div className={styles.button}>
-              <a href="whatsapp://send?phone=595982789647&text=Hola,%20estoy%20muy%20interesado%20en%20estudiar%20medicina%20en%20paraguai,%20en%20la%20UPAP,%20me%20podrias%20dar%20mas%20informacion">
-                <span>Entre em contato conosco agora</span>
+              <a href={`${send}`} onClick={() => message("messageSectionOne")}>
+                <span>
+                  Entre em contato conosco agora
+                  <span className={styles.icon}>
+                    <BsWhatsapp />
+                  </span>
+                </span>
               </a>
             </div>
           </div>
@@ -35,3 +40,12 @@ function SectionOne() {
 }
 
 export default SectionOne;
+
+/*
+ <div className={styles.button}>
+              <a href="whatsapp://send?phone=595982789647&text=Hola,%20estoy%20muy%20interesado%20en%20estudiar%20medicina%20en%20paraguai,%20en%20la%20UPAP,%20me%20podrias%20dar%20mas%20informacion">
+                <span>Entre em contato conosco agora</span>
+              </a>
+            </div>
+            {`${send}`}
+            */

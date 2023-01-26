@@ -1,8 +1,12 @@
 import React from "react";
 import styles from "../styles/SectionFour.module.css";
 import { BsCheck2Circle } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
+import WhatsMe from "./WhatsMe";
 
 function SectionFour() {
+  const { message, send } = WhatsMe();
+
   return (
     <div className={styles.containerBg}>
       <div className={`container ${styles.container}`}>
@@ -25,20 +29,24 @@ function SectionFour() {
             <span data-aos="zoom-out-up" data-aos-duration="2000">
               <BsCheck2Circle />
             </span>
-            Com o credenciamento pela ANEAES, o diploma que você vai obter será
-            reconhecido em todo o Mercosul.
+            Com o credenciamento pela ANEAES, o diploma que você vai obter Com o
+            diploma que vai obter, terá possibilidade de realizar a revalidação
+            simplificada.
           </li>
         </ul>
         <h5>
           De fato, somos a única universidade privada em ciudad del este com
           credenciamento na carreira MEDICINA.
         </h5>
-        <div className="panel-section-04-button">
-          <div className={`btn ${styles.btn}`}>
-            <a className="btna">
-              <span>Garanta sua vaga agora mesmo aqui</span>
-            </a>
-          </div>
+        <div className={styles.button}>
+          <a href={`${send}`} onClick={() => message("messageSectionFour")}>
+            <span>
+              Entre em contato conosco agora
+              <span className={styles.icon}>
+                <BsWhatsapp />
+              </span>
+            </span>
+          </a>
         </div>
       </div>
     </div>

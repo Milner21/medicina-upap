@@ -110,7 +110,6 @@ CARDS
   .gridContainer {
     width: 300px;
   }
-  
 }
 
 /*
@@ -210,11 +209,16 @@ CARDS
   .CardContainer {
     grid-template-columns: auto auto auto;
   }
+  .CardContainer a {
+    text-decoration: none !important;
+    color: #fff;
+  }
   .gridContainer {
     height: 300px;
     width: 290px;
     margin: 0.4rem;
   }
+
   .gridContainer span {
     font-size: 3.5rem;
   }
@@ -235,7 +239,6 @@ CARDS
   .container h3 {
     font-size: 1.6rem;
   }
-  
 }
 
 /*
