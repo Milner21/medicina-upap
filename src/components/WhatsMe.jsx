@@ -4,11 +4,11 @@ import { useState } from "react";
 const text = [
   {
     message: "messageSectionOne",
-    text: "Olá, tenho interesse em saber mais sobre como posso estudar medicina na upap, se puder me informar mais sobre o assunto.",
+    text: "Olá, tenho interesse em saber mais sobre como posso estudar Medicina na UPAP, se puder me informar mais sobre o assunto.",
   },
   {
     message: "messageSectionFour",
-    text: "Olá, tenho interesse em me matricular e estudar na upap, se puder me orientar",
+    text: "Olá, tenho interesse em me matricular e estudar na UPAP, se puder me orientar",
   },
   {
     message: "vestibular",
