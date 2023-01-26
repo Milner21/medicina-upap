@@ -39,7 +39,7 @@ const text = [
 function WhatsMe() {
   const [send, setSend] = useState("");
 
-  const telNumber = "595982789647"
+  const telNumber = "595992706873"
 
   const message = (message) => {
     setSend(
