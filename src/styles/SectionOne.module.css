@@ -9,37 +9,110 @@
 }
 .columnOneContainer {
   color: var(--bgBlue);
+  margin-top: 1rem;
 }
 .columnOneContainer h4 {
   margin: 0;
   font-weight: 800;
 }
-.title01 {
-  font-family: "Inspiration", cursive !important;
-  letter-spacing: 0.4rem;
-  font-size: 6.8rem;
+@keyframes movimiento {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-0.7deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
+@keyframes lbl03 {
+  0% {
+    transform: scale(1);
+    text-shadow: 0px 0px 6px #f4cf97, 0px 0px 6px #f4cf97, 0px 0px 15px #f4cf97,
+      0px 0px 15px #f5980c, 0px 0px 15px #f5980c, 0px 0px 15px #f5980c,
+      0px 0px 15px #f5980c;
+  }
+  50% {
+    transform: scale(0.9);
+    text-shadow: none;
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: 0px 0px 6px #f4cf97, 0px 0px 6px #f4cf97, 0px 0px 15px #f4cf97,
+      0px 0px 15px #f5980c, 0px 0px 15px #f5980c, 0px 0px 15px #f5980c,
+      0px 0px 15px #f5980c;
+  }
+}
+@keyframes lbl04 {
+  0% {
+    transform: scale(0.7);
+  }
+  10% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(0.5);
+  }
+  20% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.9);
+  }
+  95% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.title01 {
+  background-color: #f5980c;
+  -webkit-box-shadow: -8px -10px 0px -4px rgba(255, 255, 255, 1);
+  -moz-box-shadow: -8px -10px 0px -4px rgba(255, 255, 255, 1);
+  box-shadow: -8px -10px 0px -4px rgba(255, 255, 255, 1);
+  animation: movimiento 1s infinite;
+  font-style: italic;
+}
+
 .title02 {
-  font-size: 3rem;
+  animation: movimiento 1s infinite;
+  font-style: italic;
+}
+.title02 span {
+  background-color: #f5980c;
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 1);
+  box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 1);
 }
 .title03 {
-  font-size: 2.6rem;
+  animation: lbl03 2s infinite;
+}
+.title04 {
+  animation: lbl04 7s infinite;
+  font-style: italic;
+}
+.title05 {
+  animation: lbl04 7s infinite;
+  font-style: italic;
+}
+.title06 {
   text-transform: uppercase;
   color: #fff;
   font-weight: 500 !important;
 }
-.title03 span {
+.title06 span {
   margin: 0;
-  font-size: 2.2rem;
   background-color: var(--bgSecundary);
-  margin-left: 0.2rem;
   padding: 0 8px;
   border-radius: 0.8rem;
   border: 3px solid #fff;
 }
 .button {
   margin: 0;
-  padding: .4rem 0; 
+  padding: 0.4rem 0;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -86,13 +159,12 @@
   border-radius: 6px;
 }
 .icon {
-  margin-left: .2rem;
+  margin-left: 0.2rem;
   visibility: hidden;
 }
 .button:hover .icon {
   visibility: visible;
 }
-
 
 /*
 **
@@ -107,13 +179,34 @@
   .columnOneContainer h4 {
     text-align: center;
   }
-  .title03 span {
-    font-size: 1.2rem;
+  .title01 {
+    padding: 0.2rem 0;
+    font-size: 1.6rem;
+  }
+  .title02 {
+    font-size: 1.65rem;
+  }
+  .title03 {
+    padding-top: 1rem;
+    font-size: 3.2rem;
+  }
+  .title04 {
+    font-size: 1.6rem;
+  }
+  .title05 {
+    font-size: 1.9rem;
+  }
+  .title06 {
+    padding: 1rem 0;
+  }
+
+  .title06 span {
+    font-size: 1.4rem;
     padding: 2px 8px;
-    border-radius: 0.6rem;
+    border-radius: 0.5rem;
     border: 2px solid #fff;
   }
-  .button{
+  .button {
     justify-content: center;
   }
   .button a {
@@ -121,7 +214,7 @@
     width: 100%;
     padding: 0.6rem 1rem;
   }
-  .icon{
+  .icon {
     font-size: 1rem;
   }
   .columnTwoContainer {
@@ -136,7 +229,16 @@
 */
 
 @media only screen and (min-width: 375px) {
-  .title03 span {
+  .title01,
+  .title02,
+  .title04,
+  .title05 {
+    font-size: 1.8rem;
+  }
+  .title03 {
+    font-size: 3.5rem;
+  }
+  .title06 span {
     font-size: 1.6rem;
   }
   .button a {
@@ -151,17 +253,30 @@
 */
 
 @media only screen and (min-width: 520px) {
-  .columnOneContainer h4 {
-    text-align: left;
-    padding-left: 2rem;
+  .title01,
+  .title02,
+  .title04,
+  .title05 {
+    font-size: 2rem;
+  }
+  .title03 {
+    font-size: 4rem;
+  }
+  .title06 span {
+    font-size: 2rem;
+    border-radius: 0.7rem;
+    border: 4px solid #fff;
   }
   .button {
-    width: 90%;
+    margin: auto;
+    width: 95%;
     justify-content: center;
-    padding-left: 2.5rem;
   }
-  .icon{
+  .button a {
     font-size: 1.2rem;
+  }
+  .icon {
+    font-size: 1.4rem;
   }
 }
 
@@ -175,22 +290,25 @@
   .containerBg {
     height: 100%;
   }
-  .title01 {
-    font-size: 5.8rem;
+  .title01,
+  .title02,
+  .title04,
+  .title05 {
+    font-size: 1.2rem;
   }
-  .title02 {
-    font-size: 1.6rem;
+  .title03{
+    font-size: 3rem;
   }
-  .title03 span {
+  .title06 span {
     font-size: 1.4rem;
   }
-  .button{
+  .button {
     width: 100%;
   }
   .button a {
     font-size: 0.8rem;
   }
-  .icon{
+  .icon {
     font-size: 1rem;
   }
   .columnTwoContainer {
@@ -199,14 +317,15 @@
   }
   .img01 {
     position: absolute;
-    width: 95%;
+    width: 100%;
     bottom: 0;
     right: 0;
   }
   .img02 {
     position: absolute;
-    top: -0.5rem;
-    width: 40%;
+    top: 2rem;
+    left: -0.5rem;
+    width: 45%;
   }
 }
 
@@ -217,36 +336,37 @@
 */
 
 @media only screen and (min-width: 992px) {
-  .title01 {
-    font-size: 6.8rem;
+  .title01,
+  .title02,
+  .title04,
+  .title05 {
+    font-size: 1.4rem;
   }
-  .title02 {
-    font-size: 2.4rem;
-    padding-bottom: 1rem;
+  .title03{
+    font-size: 3.2rem;
   }
-  .title03 span {
+  .title06 span {
     font-size: 2rem;
     border: 4px solid #fff;
   }
-  .button{
-    padding-top: .9rem;
-    padding-bottom: .9rem;
+  .button {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
   }
   .button a {
     font-size: 1.2rem;
   }
-  .icon{
+  .icon {
     font-size: 1.5rem;
   }
   .img01 {
-    width: 85%;
+    width: 97%;
     bottom: 0;
-    right: 1rem;
   }
   .img02 {
-    top: 0;
-    left: 3.5rem;
-    width: 35%;
+    top: 1rem;
+    left: 1.7rem;
+    width: 40%;
   }
 }
 
@@ -257,22 +377,24 @@
 */
 
 @media only screen and (min-width: 1200px) {
-  .columnOneContainer, .columnTwoContainer{
+  .columnOneContainer,
+  .columnTwoContainer {
     max-width: 650px;
   }
-  .title01 {
-    padding-top: 2rem;
-    font-size: 8rem;
+  .title01,
+  .title02,
+  .title04,
+  .title05 {
+    font-size: 1.6rem;
   }
-  .title02 {
-    font-size: 2.7rem;
-    padding-bottom: 2rem;
+  .title03{
+    font-size: 3.4rem;
   }
-  .title03 span {
+  .title06 span {
     font-size: 2.3rem;
     margin-bottom: 2rem;
   }
-  .button{
+  .button {
     width: 93%;
     padding-bottom: 1rem;
   }
@@ -287,33 +409,33 @@
     right: 3rem;
   }
   .img02 {
-    top: .8rem;
+    top: 0.8rem;
     left: 2rem;
     width: 32%;
   }
 }
+
+
 @media only screen and (min-width: 1400px) {
-  .title01 {
-    padding-top: 1.5rem;
-    font-size: 8.5rem;
+  .title01,
+  .title02,
+  .title04,
+  .title05 {
+    font-size: 1.8rem;
   }
-  .title02 {
-    font-size: 3rem;
-    padding-bottom: 2rem;
-  }
-  .button{
-    justify-content: left;
+  .title03{
+    font-size: 3.8rem;
   }
   .button a {
     font-size: 1.5rem !important;
     width: 90%;
   }
   .img01 {
-    width: 86%;
+    width: 88%;
   }
   .img02 {
-    top: -.5rem;
-    left: 5rem;
+    top: 1rem;
+    left: 4.2rem;
     width: 32%;
   }
 }

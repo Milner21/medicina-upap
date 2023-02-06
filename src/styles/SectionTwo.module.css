@@ -35,6 +35,9 @@ CARDS
   justify-content: center;
   gap: 2px;
 }
+.CardContainer a{
+  text-decoration: none;
+}
 .gridContainer {
   border-radius: 0.8rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);

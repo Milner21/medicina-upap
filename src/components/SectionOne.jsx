@@ -13,9 +13,12 @@ function SectionOne() {
       <div className="container">
         <div className="row d-flex justify-content-center">
           <div className={`col-md-6 col-lg-6 ${styles.columnOneContainer}`}>
-            <h4 className={styles.title01}>Junte-se</h4>
-            <h4 className={styles.title02}>Aqui estamos todos!!!</h4>
-            <h4 className={styles.title03}>
+            <h4 className={styles.title01}>Não perca esta oportunidade</h4>
+            <h4 className={styles.title02}><span>por apenas</span></h4>
+            <h4 className={styles.title03}>1500 R$</h4>
+            <h4 className={styles.title04}>você pode realizar seu sonho de ser médico</h4>
+            <h4 className={styles.title05}>só aqui na UPAP</h4>
+            <h4 className={styles.title06}>
               <span>convocatoria 2023</span>
             </h4>
             <div className={styles.button}>
